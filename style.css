@@ -24,7 +24,9 @@ header {
 
 #page-logo a {
   font-size: 40px;
+  font-weight: bold;
   padding: 10px;
+  color: rgb(238, 164, 80);
 }
 
 header nav ul {
@@ -33,24 +35,47 @@ header nav ul {
 }
 
 header nav li {
-  margin-left: 20px;
+  margin: 0 16px;
+}
+
+header nav a {
+  color: rgb(185, 131, 31);
+}
+
+header nav a:hover {
+  color: rgb(228, 163, 44);
 }
 
 main h1 {
+  color: rgb(238, 164, 80);
   text-align: center;
-  margin-bottom: 48px;
 }
 
 #meals-card {
-  display: flex;
-  justify-content: center;
+  width: 80%;
+  margin: 50px auto;
+}
+
+#meals-card ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .meal {
-  margin: 0 20px;
-  width: 350px;
   border-radius: 8px;
   overflow: hidden;
+  background-color: rgb(228, 206, 182);
+}
+
+.meal div {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.meal h2 {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .meal img {
@@ -59,6 +84,13 @@ main h1 {
   object-fit: cover;
 }
 
-.meal div {
-  text-align: center;
+.btn {
+  color: white;
+  background-color: rgb(228, 163, 44);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.btn:hover {
+  background-color: rgb(221, 134, 34);
 }
